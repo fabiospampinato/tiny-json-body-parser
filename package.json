@@ -31,6 +31,9 @@
     "middleware",
     "tiny"
   ],
+  "dependencies": {
+    "is-primitive": "^3.0.1"
+  },
   "devDependencies": {
     "@types/node": "^16.0.1",
     "rimraf": "^3.0.2",
