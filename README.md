@@ -16,7 +16,7 @@ import json from 'tiny-json-body-parser';
 
 const app = express ();
 
-app.use ( json ({ limit: 1_000_000 }) ); // 10MB limit
+app.use ( json ({ limit: 1_000_000 }) ); // 1MB limit
 
 app.post ( '/', req => {
 
