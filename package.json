@@ -1,26 +1,17 @@
 {
   "name": "tiny-json-body-parser",
+  "repository": "github:fabiospampinato/tiny-json-body-parser",
   "description": "A tiny middleware that parses JSON request bodies.",
   "version": "1.0.2",
+  "type": "module",
   "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "exports": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "scripts": {
-    "clean": "rimraf dist",
-    "compile": "tsc --skipLibCheck && tstei",
-    "compile:watch": "tsc --skipLibCheck --watch",
+    "clean": "tsex clean",
+    "compile": "tsex compile",
+    "compile:watch": "tsex compile --watch",
     "prepublishOnly": "npm run clean && npm run compile"
-  },
-  "bugs": {
-    "url": "https://github.com/fabiospampinato/tiny-json-body-parser/issues"
-  },
-  "license": "MIT",
-  "author": {
-    "name": "Fabio Spampinato",
-    "email": "spampinabio@gmail.com"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/fabiospampinato/tiny-json-body-parser.git"
   },
   "keywords": [
     "json",
@@ -32,12 +23,10 @@
     "tiny"
   ],
   "dependencies": {
-    "is-primitive": "^3.0.1"
+    "is": "npm:@fabiospampinato/is@^2.0.0"
   },
   "devDependencies": {
-    "@types/node": "^16.0.1",
-    "rimraf": "^3.0.2",
-    "typescript": "^4.3.5",
-    "typescript-transform-export-interop": "^1.0.4"
+    "tsex": "^1.1.2",
+    "typescript": "^4.6.4"
   }
 }
