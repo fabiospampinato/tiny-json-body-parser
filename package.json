@@ -2,7 +2,7 @@
   "name": "tiny-json-body-parser",
   "repository": "github:fabiospampinato/tiny-json-body-parser",
   "description": "A tiny middleware that parses JSON request bodies.",
-  "version": "1.0.2",
+  "version": "2.0.0",
   "type": "module",
   "main": "dist/index.js",
   "exports": "./dist/index.js",
